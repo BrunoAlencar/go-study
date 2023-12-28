@@ -27,8 +27,6 @@ func (d deck) print () {
 	}
 }
 
-type laptopSize float64
- 
-func (this laptopSize) getSizeOfLaptop() laptopSize {
-    return this
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
 }
