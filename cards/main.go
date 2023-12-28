@@ -7,6 +7,7 @@ func main() {
 	cards = append(cards, "Six of Spades")
 	
 	for i, card := range cards {
+		// if any variable is not used go will throw an error
 		fmt.Println(i, card)
 	}
 	// fmt.Println(cards)
