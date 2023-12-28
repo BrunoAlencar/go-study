@@ -1,11 +1,11 @@
 package main
 
 import "fmt"
-var number2 int = 2 // this work outside of a function
-number1 := 1 // this doesnt work outside of a function 
 
 func main() {
-	// var card string = "Ace of Spades"
+	var number1 int // a way to only declare variable without assigning value
+
+	number1 = 10
 	card:= "Ace of Spades"
 
 	card = "Five of Diamonds"
