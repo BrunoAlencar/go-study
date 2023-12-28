@@ -4,8 +4,6 @@ import "fmt"
 
 func main() {
 	card:= newCard()
-	 // To run these code together,  go run cards/main.go cards/state.go
-	printState()
 	fmt.Println(card)		
 }
 
