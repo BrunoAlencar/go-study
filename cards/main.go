@@ -6,8 +6,6 @@ func main() {
 
 	hand.print()
 	remainingCards.print()
-}
+	hand.saveToFile("cards/hand.txt")
 
-func newCard() string {
-	return "Five of Diamonds"
 }
