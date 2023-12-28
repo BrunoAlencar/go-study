@@ -3,12 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	var number1 int // a way to only declare variable without assigning value
+	card:= newCard()
 
-	number1 = 10
-	card:= "Ace of Spades"
-
-	card = "Five of Diamonds"
-	fmt.Println(number1)
 	fmt.Println(card)		
+}
+
+func newCard() string {
+	return "Five of Diamonds"
 }
