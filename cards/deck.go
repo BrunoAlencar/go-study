@@ -55,3 +55,11 @@ func (d deck) saveToFile(filename string) error {
 	}
 	return res
 }
+
+func newDeckFromFile(filename string) deck {
+	b, err := os.ReadFile(filename)
+	if err != nil {
+		log.Fatal("Error: ", err)
+	}
+	return fromByteSlice(b)
+}
