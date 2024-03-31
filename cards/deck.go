@@ -60,6 +60,7 @@ func newDeckFromFile(filename string) deck {
 	b, err := os.ReadFile(filename)
 	if err != nil {
 		log.Fatal("Error: ", err)
+		os.Exit(1)
 	}
 	return fromByteSlice(b)
 }
